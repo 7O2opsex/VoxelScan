@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "voxelscan",
+	"version": "${version}",
+	"name": "VoxelScan",
+	"description": "Client-side 3D block scanner with a glanceable pie chart, HUD, and ESP. Default interface is translucent violet. Rebindable in vanilla and Sodium controls.",
+	"authors": [
+		"Angel"
+	],
+	"contact": {
+		"homepage": "https://github.com/7O2opsex/VoxelScan",
+		"sources": "https://github.com/7O2opsex/VoxelScan"
+	},
+	"license": "MIT",
+	"icon": "assets/voxelscan/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"fr.angel.voxelscan.BlockRadarMod"
+		],
+		"client": [
+			"fr.angel.voxelscan.client.BlockRadarClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
